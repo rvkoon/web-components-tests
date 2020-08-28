@@ -1,5 +1,5 @@
 export const theme = {
     headerBgColor: "coral",
-    backgroundColor: "#dce6f7",
+    backgroundColor: "#",
     color:   '#505050'
 }

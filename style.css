@@ -1,0 +1,21 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html{
+    background-color: #161616;
+}
+
+p,h1, h2, h3, h4, h5, h6, a{
+    color: #303030;
+    text-decoration: none;
+}
+
+.edito{
+    background-color: #fff;
+    border-radius: 12px;
+    padding: 24px;
+    margin-top: 30px;
+}
