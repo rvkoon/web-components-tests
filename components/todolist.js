@@ -78,7 +78,8 @@ class TodoList extends HTMLElement {
     }
 
     async _fetchTodos(){
-        const res   = await fetch('http://localhost:5000/todos.json')
+        const port = location.port;
+        const res   = await fetch(`http://localhost:${port}/todos.json`)
         const todos = await res.json()
         this._todos = todos.todos 
         this._renderTodoList()
