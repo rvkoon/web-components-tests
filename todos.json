@@ -1,0 +1,12 @@
+{
+    "todos" : [
+        {
+            "todoName"   : "Laver la voiture",
+            "status" : 2
+        },
+        {
+            "todoName"   : "Sortir le chien",
+            "status" : 0
+        }
+    ]
+}

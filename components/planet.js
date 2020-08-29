@@ -41,7 +41,7 @@ class Planet extends HTMLElement {
     }
 
     static get observedAttributes() {
-        return ['planetname', 'planetpopulation'];
+        return ['planetname', 'planetpopulation']
     }
 
     connectedCallback(){
