@@ -44,10 +44,10 @@ template.innerHTML = `
         - Cliquer sur une tâche change son statut<br>
         <br>
     </p>
-    <div>
+    <form>
         <input type="text" placeholder="Ajouter une tâche"/>
         <button class="add-todo">Ajouter</button>
-    </div>
+    </form>
 
     <ul class="todo-list">
     </ul>
@@ -62,9 +62,11 @@ class TodoList extends HTMLElement {
 
         this.$input    = this._shadowRoot.querySelector('input')
         this.$todoList = this._shadowRoot.querySelector('.todo-list')
-        this.$btn      = this._shadowRoot.querySelector('.add-todo')   
+        this.$btn      = this._shadowRoot.querySelector('.add-todo')  
+        this.$form     = this._shadowRoot.querySelector('form')  
         
         this.$btn.addEventListener('click', this._addTodo.bind(this));
+        this.$form.addEventListener('submit', this._addTodo.bind(this));
     }
 
     static get observableAttributes(){
